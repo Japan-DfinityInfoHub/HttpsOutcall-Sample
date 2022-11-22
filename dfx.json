@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "HttpsOutcallSample_backend": {
+      "candid": "src/HttpsOutcallSample_backend/HttpsOutcallSample_backend.did",
+      "package": "HttpsOutcallSample_backend",
+      "type": "rust"
+    },
+    "HttpsOutcallSample_frontend": {
+      "dependencies": [
+        "HttpsOutcallSample_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/HttpsOutcallSample_frontend/src/index.html"
+      },
+      "source": [
+        "src/HttpsOutcallSample_frontend/assets",
+        "dist/HttpsOutcallSample_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
